@@ -9,7 +9,7 @@ namespace KensGameProject {
             var leprechaun = new Character("Leprechaun", Class.Cleric);
         }
         public static void Main(string[] args) {
-            new MainClass().Run();
+            new MainClass().Run(); 
         }
     }
 }
