@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace KensGameProject {
 
     public class Character {
 
         public string Name { get; set; }
-        public Class Class { get; set; } 
+        public Class Class { get; set; }
+        public List<Weapon> Weapons = new List<Weapon>();
         public int Health { get; set; }
         public int Stamina { get; set; }
         public int Attunement { get; set; }
@@ -25,6 +28,7 @@ namespace KensGameProject {
             this.Strength = cls.Strength;
             this.Stamina = cls.Stamina;
             this.Attunement = cls.Attunement;
+            this.Weapons = cls.Weapons;
         }
     }
 }
