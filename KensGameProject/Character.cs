@@ -15,9 +15,11 @@ namespace KensGameProject {
         public int Dexterity { get; set; }
         public int Intelligence {get;set;    }
         public int Luck { get; set; }
-    
-        public Character() {
+
+        public void Attack(Character opponent, Weapon weapon) {
+            
         }
+
         public Character(string name, Class cls) {
             this.Name = name;
             this.Class = cls;
