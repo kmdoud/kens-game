@@ -37,6 +37,7 @@
     <Compile Include="Character.cs" />
     <Compile Include="Class.cs" />
     <Compile Include="Weapon.cs" />
+    <Compile Include="Randomness.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
