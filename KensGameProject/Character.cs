@@ -29,8 +29,7 @@ namespace KensGameProject {
         }
 
         public static Character Battle(Character ch1, Character ch2) {
-            Random rnd = new Random(DateTime.Now.Millisecond);
-            var ch1StrikesFirst = rnd.Next(2) == 0;
+            var ch1StrikesFirst = Randomness.TruePercent(); // default 50%
             var ch1Weapon = ch1.GetHighestDPS();
             var ch2Weapon = ch2.GetHighestDPS();
             while(ch1.Health > 0 && ch2.Health > 0) {

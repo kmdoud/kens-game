@@ -19,13 +19,14 @@ namespace KensGameProject {
         }
 
         void Run() {
-            var knight = new Character("Balthazar", Class.Pyromancer);
-            var sorceror = new Character("Leprechaun", Class.Cleric);
-            var winner = Character.Battle(knight, sorceror);
+            var Pyromancer = new Character("Pyromancer", Class.Pyromancer);
+            var Cleric = new Character("Cleric", Class.Cleric);
+            var winner = Character.Battle(Pyromancer, Cleric);
             Console.WriteLine("Winner is {0}", winner.Name);
         }
         public static void Main(string[] args) {
-            new MainClass().TestRandomness(); 
+            new MainClass().Run(); 
+            //new MainClass().TestRandomness();
         }
     }
 }
