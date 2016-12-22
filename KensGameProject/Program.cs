@@ -7,8 +7,8 @@ namespace KensGameProject {
         void TestRandomness() {
             var t = 0;
             var f = 0;
-            for (var i = 0; i < 100000; i++) {
-                var tf = Randomness.TrueOrFalse(25);
+            for (var i = 0; i < 100; i++) {
+                var tf = Randomness.TruePercent(35);
                 if (tf) {
                     t++;
                 } else {
@@ -25,7 +25,7 @@ namespace KensGameProject {
             Console.WriteLine("Winner is {0}", winner.Name);
         }
         public static void Main(string[] args) {
-            new MainClass().Run(); 
+            new MainClass().TestRandomness(); 
         }
     }
 }

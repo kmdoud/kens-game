@@ -5,9 +5,11 @@ namespace KensGameProject {
 
         static Random rnd = null;
 
-        public static bool TrueOrFalse(int truePercent = 50) {
-            int nbrNeeded = 100 / truePercent;
-            return rnd.Next(nbrNeeded) == 0;
+        public static bool TruePercent(int truePercent = 50) {
+            if(truePercent < 0 || truePercent > 99) {
+                throw new ApplicationException("truePercent must be 0 <= x < 100");
+            }
+            return rnd.Next(100) <= truePercent;
         }
     
         public Randomness() {
